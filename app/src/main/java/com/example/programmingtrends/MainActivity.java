@@ -1,13 +1,10 @@
 package com.example.programmingtrends;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.*;
 import android.widget.TextView;
-
 import org.json.*;
-
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.URL;
@@ -73,6 +70,7 @@ public class MainActivity extends AppCompatActivity {
         return new Thread(runnable);
     }
 
+    // Handles response of GET request with just location param
     private void handleCityRequest(JSONObject jsonObject, String city) {
         try {
             JSONArray array = (JSONArray) jsonObject.get("jobs");
@@ -94,6 +92,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    // Handles response of GET request with location and description params
     private void handleCityLangRequest(JSONObject jsonObject, String city, String lang, Integer totalJobs) {
         try {
             JSONArray array = (JSONArray) jsonObject.get("jobs");
