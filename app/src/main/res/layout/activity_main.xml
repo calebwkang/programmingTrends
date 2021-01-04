@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="36dp"
+        android:text="Find Programming Trends"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="75dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:onClick="onClick"
+        android:text="Go"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/city0"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:ellipsize="none"
+            android:scrollHorizontally="false"
+
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/city1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:ellipsize="none"
+            android:scrollHorizontally="false"
+
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/city2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:ellipsize="none"
+            android:scrollHorizontally="false"
+
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/city3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/city4"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/city5"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/city6"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/city7"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="TextView" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:gravity="center"
+        android:text="Cities: Boston, San Francisco, Los Angeles, Denver, Boulder, Chicago, New York, Raleigh"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
